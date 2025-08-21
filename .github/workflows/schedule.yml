@@ -13,4 +13,3 @@ jobs:
     steps:
       - name: Echo current time
         run: echo "Finally!!@@,The current server time is $(date)"
-
