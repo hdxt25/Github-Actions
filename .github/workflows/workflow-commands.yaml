@@ -10,7 +10,7 @@ jobs:
       - name: "group logging"
         run: |
           echo "::group::My Group Message"
-          echo "This is Msg  1"
-          echo "That is Msg  2"
+          echo "This is Msg 1"
+          echo "That is Msg 2"
           echo "::endgroup::"
       
