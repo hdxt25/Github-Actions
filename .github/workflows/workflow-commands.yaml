@@ -2,13 +2,15 @@ name: workflow commands
 on:
   - push
   - pull_request
+
 jobs:
   my-job:
     runs-on: devops
-    steps: null
-    -name: group logging
-    run: |
-      echo "::group::My Group Message"
-      echo "This is Msg 1"
-      echo "That is Msg 2"
-      echo "::endgroup::"
+    steps:
+      - name: "group logging"
+        run: |
+          echo "::group::My Group Message"
+          echo "This is Msg 1"
+          echo "That is Msg 2"
+          echo "::endgroup::"
+      
