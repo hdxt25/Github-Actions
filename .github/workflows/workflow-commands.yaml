@@ -5,7 +5,7 @@ on:
 
 jobs:
   my-job:
-    runs-on: devops
+    runs-on: self-hosted
     steps:
       - name: "group logging"
         run: |
