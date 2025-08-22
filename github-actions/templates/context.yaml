@@ -1,0 +1,27 @@
+name: "context in GitHub Actions"
+
+on: 
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+jobs:
+  job1:
+    runs-on: self-hosted
+    steps:
+      - name: "Use GitHub Context"
+        run: |
+          echo "Hello! This is $MY_ACTION"
+          echo "Hello!! This is $MY_ACTOR"
+        env:
+          MY_ACTION: ${{ github.action }}
+          MY_ACTOR: ${{ github.actor }}
+
+      - name: "use env context"
+        run: |
+          echo "The username is ${{ env.USERNAME }}"
+          echo "The password is ${{ env.PASSWORD }}"
+        env:    
+          USERNAME: "hdxt25"
+          PASSWORD: "Admin@1010"
