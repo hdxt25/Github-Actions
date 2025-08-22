@@ -1,4 +1,4 @@
-name: macOS Workflow Example
+name: macOS Workflow (GitHub Hosted Runner)
 
 on:
   push:
