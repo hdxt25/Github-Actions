@@ -1,4 +1,4 @@
-name: "context" in GitHub Actions
+name: "context in GitHub Actions"
 
 on: 
     push:
