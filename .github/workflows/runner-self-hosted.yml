@@ -16,7 +16,7 @@ jobs:
       - name: Run a one-line script
         run: echo "Hello from a self-hosted runner!"
       - name: Print runner name
-        run: echo "This job is running on runner: ${{ runner.name }}"
+        run: 'echo "This job is running on runner: ${{ runner.name }}"'
       - name: Print other runner details
         run: |
           echo "Runner OS: ${{ runner.os }}"
