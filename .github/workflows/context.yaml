@@ -1,4 +1,4 @@
-name: Demo on how to use "context" in GitHub Actions
+name: "context" in GitHub Actions
 
 on: 
     push:
