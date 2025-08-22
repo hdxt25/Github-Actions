@@ -19,3 +19,4 @@ jobs:
       - name: "step 2"
         run: |
           echo "Value of MY_VAL is $MY_VAL"
+      
